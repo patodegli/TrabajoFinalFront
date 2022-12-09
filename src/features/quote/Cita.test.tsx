@@ -46,4 +46,3 @@ describe("Prueba componente Cita", () => {
   });
 });
 
-export { };

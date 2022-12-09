@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { obtenerNoticias } from "./fakeRest";
 import { INoticiasNormalizadas } from "./Noticias";
 
+//este custom hook se encarga de obtener las noticias a través de un cliente de API, normalizarlas y retornarlas en un array
+
 export const useNoticias = () => {
   const [noticias, setNoticias] = useState<INoticiasNormalizadas[]>([]);
 

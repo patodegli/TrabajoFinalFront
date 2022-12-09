@@ -8,6 +8,8 @@ import {
 } from "./styled";
 import { useNoticias } from "./useNoticias";
 
+// este componente se refactoriza para reducir la cantidad de responsabilidades asociadas al mismo (Single Responsability)
+
 export interface INoticiasNormalizadas {
   id: number;
   titulo: string;
@@ -19,7 +21,7 @@ export interface INoticiasNormalizadas {
 }
 
 const Noticias = () => {
-  
+
   const [noticia, setNoticia] = useState<INoticiasNormalizadas | null>(null);
   const noticias = useNoticias()
 
